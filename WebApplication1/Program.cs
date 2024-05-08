@@ -14,13 +14,17 @@ namespace WebApplication1
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddScoped<ICRUDservice, CRUDservice>();
 
 
             builder.Services.AddDbContext<MicroseviceDBContext>(options =>
             {
                 options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresqlConnectionString"));
             }); 
+
+
+            builder.Services.AddScoped<ICRUDservice, CRUDservice>();
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

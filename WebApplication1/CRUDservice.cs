@@ -16,6 +16,7 @@ namespace WebApplication1
         public async Task<BlogPost> CreatePost(BlogPost post)
         {
             var result = await _context.Posts.AddAsync(post);
+            await _context.SaveChangesAsync();
             return result.Entity;
         }
 
