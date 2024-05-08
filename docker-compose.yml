@@ -17,11 +17,14 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=Maqsudkhan
-      - POSTGRES_DB=MicroserviceDockerDB
+      - POSTGRES_DB=MicrosrviceDockerDB
     volumes:
-      - pgdata:/var/lib/postgresql/MicroserviceDockerDB
+      - pgdata:/var/lib/postgresql/MicrosrviceDockerDB
     ports:
-      - "5432:5432"
+      - "5432:5432" 
+    networks:
+      - db-network
+
 
 networks:
   db-network:
