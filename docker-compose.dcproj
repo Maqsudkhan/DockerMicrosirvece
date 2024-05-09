@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>d0f277a0-d3d9-40e0-b8ff-563f8ee527c0</ProjectGuid>
+    <ProjectGuid>941f2a70-d87a-4f34-8e13-0b5968e9d133</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>webapplication1</DockerServiceName>
